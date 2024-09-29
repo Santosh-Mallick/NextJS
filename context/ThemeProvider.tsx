@@ -10,7 +10,7 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }:{ children: React.ReactNode }) {
-    const [mode, setMode] = useState('');
+    const [mode, setMode] = useState('light'); // default-value
 
     const handleThemeChange = () => {
         if(mode === 'dark') {
@@ -22,9 +22,10 @@ export function ThemeProvider({ children }:{ children: React.ReactNode }) {
         }
     }
 
-    // useEffect(() => {
-    //     handleThemeChange();
-    // },[mode])
+    useEffect(() => {
+        handleThemeChange();
+        console.log("hello");
+    },[])
 
 
     return (

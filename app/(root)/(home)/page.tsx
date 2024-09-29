@@ -1,9 +1,9 @@
-import { UserButton } from "@clerk/nextjs";
+// import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
     <div>
-       <UserButton/>
+       {/* <UserButton/> */}
        <p>Hello World</p>
     </div>
   )

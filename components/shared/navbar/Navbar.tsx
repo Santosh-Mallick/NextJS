@@ -23,7 +23,6 @@ const Navbar = () => {
     Global Search
         <div className="flex-between gap-5">
             Theme
-
             <SignedIn>
           <UserButton 
             appearance={{
